@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Akash | AI Portfolio</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="index.css">
+</head>
+
+<body>
+
+<!-- ================= LOADER (VISIBLE FIRST) ================= -->
+<div id="loader">
+    <h1 class="glitch" data-text="Initializing AI System...">
+    Initializing AI System...
+    </h1>
+
+    <div class="progress-container">
+        <div class="progress-bar" id="progressBar"></div>
+    </div>
+
+    <p id="loadingText">0%</p>
+
+    <button id="startupBtn">Initialize AI</button>
+</div>
+
+<!-- ================= MAIN CONTENT (HIDDEN FIRST) ================= -->
+<div id="mainContent" style="display: none;">
+
+    <div id="particles-js"></div>
+    <canvas id="matrix"></canvas>
+    <div class="background"></div>
+
+    <header>
+        <h1 class="logo">AKASH_AI</h1>
+        <nav>
+            <a href="#about">About</a>
+            <a href="#skills">Skills</a>
+            <a href="#projects">Projects</a>
+            <a href="#contact">Contact</a>
+        </nav>
+    </header>
+
+    <section class="hero">
+        <h2>Initializing System...</h2>
+        <h1 class="glow glitch" data-text="Akash B R">
+        Akash B R
+        </h1>
+        <p class="typing"></p>
+    </section>
+
+    <section id="about" class="card">
+        <h2>About Me</h2>
+        <p>
+            2nd Year BCA AIML student passionate about Artificial Intelligence,
+            Machine Learning, and futuristic web technologies.
+        </p>
+    </section>
+
+    <section id="skills" class="card">
+        <h2>Core Modules</h2>
+
+        <div class="cube-container">
+            <div class="cube">
+                <div class="face front">Python</div>
+                <div class="face back">ML</div>
+                <div class="face right">HTML</div>
+                <div class="face left">CSS</div>
+                <div class="face top">JS</div>
+                <div class="face bottom">AI</div>
+            </div>
+        </div>
+    </section>
+
+    <section id="projects" class="card">
+        <h2>AI Projects</h2>
+
+        <div class="project">
+            <h3>Spam Detection Model</h3>
+            <p>Machine Learning classification project.</p>
+        </div>
+
+        <div class="project">
+            <h3>Student Performance Prediction</h3>
+            <p>Predicting outcomes using regression model.</p>
+        </div>
+    </section>
+
+    <section id="contact" class="card">
+        <h2>Connect</h2>
+        <p>Email: akash@example.com</p>
+        <p>GitHub: github.com/yourusername</p>
+    </section>
+
+</div>
+
+<!-- ================= SCRIPTS ================= -->
+<script src="https://cdn.jsdelivr.net/npm/particles.js"></script>
+<script src="script.js"></script>
+<script src="matrix.js"></script>
+<audio id="startupSound" src="startup.mp3"></audio>
+<audio id="clickSound" src="click.mp3" ></audio>
+
+</body>
+</html>
