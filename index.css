@@ -274,3 +274,38 @@ html {
 body {
     animation: flicker 4s infinite;
 }
+#loader {
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    background: url("batman.jpg") no-repeat center center;
+    background-size: cover;
+}
+
+/* Optional dark overlay for better text visibility */
+#loader::before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.6);
+    top: 0;
+    left: 0;
+}
+
+/* Keep loader content above image */
+#loader h1,
+#loader .progress-container,
+#loader p,
+#loader button {
+    position: relative;
+    z-index: 2;
+}
+#loader {
+    animation: zoomBg 10s infinite alternate;
+}
+
+@keyframes zoomBg {
+    from { background-size: 100%; }
+    to { background-size: 110%; }
+}
