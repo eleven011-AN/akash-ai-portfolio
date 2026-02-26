@@ -58,7 +58,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
                 // AI Greeting Voice
                 const message = new SpeechSynthesisUtterance(
-                    "welcome to... The future batman Mr Akash Portfolio........  MEN. ARE BRAVE ."
+                    "welcome to... The future batman Mr Akash Portfolio........  MEN. ARE BRAVE .."
                 );
 
                 message.rate = 0.7;
