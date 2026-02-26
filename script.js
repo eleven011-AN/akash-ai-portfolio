@@ -58,11 +58,12 @@ document.addEventListener("DOMContentLoaded", function () {
 
                 // AI Greeting Voice
                 const message = new SpeechSynthesisUtterance(
-                    "Welcome Akash. Artificial Intelligence system activated."
+                    "welcome to... The future batman Mr Akash Portfolio........  MEN. ARE BRAVE ."
                 );
 
-                message.rate = 0.9;
-                message.pitch = 1;
+                message.rate = 0.7;
+                message.pitch = 0.2;
+                message.volume = 2;
 
                 speechSynthesis.speak(message);
 
